@@ -465,7 +465,7 @@ Check each item off in `PROGRESS.md` as you go. Push and tag at the end of every
 
 | # | Phase | Priority | Acceptance |
 |---|---|---|---|
-| 0 | **Verify & plan.** Read the docs in §2.1 and write `docs/SOURCES.md`, `docs/ARCHITECTURE.md` and the first `DECISIONS.md` entries. Scaffold the folders. | P0 | Every external format the kit relies on has a source and a date. The plan is committed. |
+| 0 | **Verify & plan.** First confirm this repo is **private** (`gh api repos/geraltbhai/levelwright --jq .visibility`). If it isn't, stop and ask Sam before writing any kit content. Then read the docs in §2.1 and write `docs/SOURCES.md`, `docs/ARCHITECTURE.md` and the first `DECISIONS.md` entries. Scaffold the folders. | P0 | The repo is private. Every external format the kit relies on has a source and a date. The plan is committed. |
 | 1 | **Kit content.** All 17 agents, 45 skills and 8 commands at the §4.2 quality bar. Manifest generator. | P0 | The manifest is valid; every skill has a Verify section and official sources; a spot-check of 5 random skills by a fresh subagent passes. |
 | 2 | **CLI installer** (init/update/status/uninstall, markers, plugin packaging, multi-agent adapters) and its tests. | P0 | All §5 tests pass; a manual install/update/uninstall in a scratch project is logged in PROGRESS.md. |
 | 3 | **Doctor** (static and runtime), rule packs, fixtures, **playtest** bot. | P0 doctor-static · P1 runtime + playtest | Fixture tests pass; `bad-game` produces the expected findings; a playtest report renders. |
