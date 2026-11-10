@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.astro/
+.vercel/
+.output/
+coverage/
+playwright-report/
+test-results/
+.levelwright/playtest/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
